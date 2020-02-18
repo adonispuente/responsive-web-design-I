@@ -1,3 +1,349 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+content = "width=device-width, initial-scale=1" html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+body {
+  width: 1100px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+p {
+  padding: 10px;
+}
+h1 {
+  font-size: 50px;
+  font-family: "bangers", cursive;
+  justify-content: center;
+}
+h2 {
+  font-size: 25px;
+  font-family: "bangers", cursive;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+}
+nav a {
+  margin-top: 5px;
+  color: grey;
+  text-decoration: none;
+}
+.intro {
+  width: 225px;
+  text-align: center;
+}
+.intro .started {
+  background-color: white;
+  text-align: center;
+  width: 130px;
+  margin: 15px;
+}
+footer {
+  text-align: center;
+}
+.picture-box {
+  width: 100%;
+}
+.middle-img {
+  width: 100%;
+  padding: 10px;
+}
+.top-content {
+  display: flex;
+  direction: row;
+}
+.bottom-content {
+  display: flex;
+  direction: row;
+  font-family: "";
+}
+.contact-content a {
+  text-decoration: none;
+  color: black;
+}
+.intro-container {
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+  margin: 50px;
+}
+.intro {
+  margin-top: 50px;
+  width: 350px;
+}
+.intro h1 {
+  font-size: 5rem;
+}
+.intro button {
+  height: 35px;
+  border-radius: 5px;
+}
+.container {
+  max-width: 100vw;
+  overflow: hidden;
+}
+.TabletNav {
+  display: none;
+}
+.logo2 {
+  display: none;
+}
 
+/* THis is where I make the media breakpoints */
+
+@media (max-width: 800px) {
+  body {
+    margin: auto;
+    width: 800px;
+  }
+  .intro-container {
+  }
+  .introimg {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .logo2 {
+    display: block;
+    margin: auto;
+    padding: 2% 0%;
+    margin-top: 2%;
+  }
+
+  .TabletNav {
+    width: 100%;
+    display: flex;
+    padding-left: 1%;
+    justify-content: space-around;
+  }
+  .top-content {
+    width: 81%;
+    margin: 0 auto;
+  }
+  .bottom-content {
+    width: 81%;
+    margin: 0 auto;
+  }
+  .middle-img {
+    width: 77%;
+    padding-left: 10%;
+  }
+  .contact-content {
+    padding-left: 8%;
+  }
+}
+
+/* phones */
+@media (max-width: 500px) {
+  body {
+    margin: auto;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .TabletNav {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+  }
+  .container2 {
+    margin: 0 auto;
+  }
+  .intro {
+    margin-top: 0px;
+    /* padding-right: 5%; */
+  }
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .top-content {
+    width: 70%;
+  }
+  .middle-img {
+    /* padding-left: 20%; */
+    margin: 0 auto;
+  }
+  .intro .started {
+    margin: 0px;
+  }
+  nav a {
+    padding: 10px;
+    color: grey;
+    text-decoration: none;
+  }
+  button .intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .introimg {
+    display: none;
+  }
+  .intro-container intro {
+    display: flex;
+    direction: row;
+    justify-items: center;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+  }
+  .picture-box {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    padding-right: 8%;
+  }
+  footer {
+    padding-right: 7%;
+  }
+  .logo2 {
+    display: none;
+  }
+  .intro-container {
+  }
+}
