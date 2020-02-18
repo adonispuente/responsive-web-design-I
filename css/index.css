@@ -285,17 +285,13 @@ footer {
   .intro h1 {
     font-size: 3rem;
   }
-  h2 {
-    padding-right: 4%;
-    padding: 0%;
-  }
 
   .top-content {
     width: 70%;
-    padding-left: 12%;
   }
   .middle-img {
-    padding-left: 20%;
+    /* padding-left: 20%; */
+    margin: 0 auto;
   }
   .intro .started {
     margin: 0px;
@@ -323,17 +319,16 @@ footer {
     flex-direction: column;
     text-align: center;
     width: 70%;
-    padding-left: 12%;
   }
   .top-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 70%;
-    padding-left: 12%;
   }
   .picture-box {
     width: 100vw;
+    margin: 0 auto;
   }
   .contact-content {
     display: flex;
@@ -350,8 +345,5 @@ footer {
     display: none;
   }
   .intro-container {
-  }
-  .picture-box {
-    margin: 0 11%;
   }
 }
